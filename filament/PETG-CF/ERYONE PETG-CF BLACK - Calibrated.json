@@ -1,0 +1,64 @@
+{
+    "default_filament_colour": [
+        "#020102"
+    ],
+    "dont_slow_down_outer_wall": [
+        "1"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "fan_max_speed": [
+        "20"
+    ],
+    "filament_flow_ratio": [
+        "1.04"
+    ],
+    "filament_max_volumetric_speed": [
+        "35"
+    ],
+    "filament_notes": [
+        "real purple, not the matte finish"
+    ],
+    "filament_retract_when_changing_layer": [
+        "0"
+    ],
+    "filament_settings_id": [
+        "ERYONE PETG-CF BLACK - Calibrated"
+    ],
+    "filament_type": [
+        "PETG-CF"
+    ],
+    "filament_wipe": [
+        "0"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "80"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "80"
+    ],
+    "inherits": "Elegoo Generic PETG",
+    "is_custom_defined": "0",
+    "name": "ERYONE PETG-CF BLACK - Calibrated",
+    "nozzle_temperature": [
+        "250"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "250"
+    ],
+    "nozzle_temperature_range_high": [
+        "250"
+    ],
+    "nozzle_temperature_range_low": [
+        "220"
+    ],
+    "pressure_advance": [
+        "0.032"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "version": "2.1.0.0"
+}

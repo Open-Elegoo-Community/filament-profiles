@@ -1,0 +1,67 @@
+{
+    "default_filament_colour": [
+        "#3C673F"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "fan_cooling_layer_time": [
+        "25"
+    ],
+    "fan_max_speed": [
+        "25"
+    ],
+    "filament_flow_ratio": [
+        "0.9866"
+    ],
+    "filament_max_volumetric_speed": [
+        "26"
+    ],
+    "filament_notes": [
+        ".9899"
+    ],
+    "filament_retract_lift_enforce": [
+        "All Surfaces"
+    ],
+    "filament_retract_when_changing_layer": [
+        "0"
+    ],
+    "filament_retraction_length": [
+        "0.8"
+    ],
+    "filament_retraction_speed": [
+        "30"
+    ],
+    "filament_settings_id": [
+        "IEMAI  PETG-CF matte green - calibrated"
+    ],
+    "filament_type": [
+        "PETG-CF"
+    ],
+    "filament_wipe": [
+        "0"
+    ],
+    "from": "User",
+    "inherits": "Elegoo Generic PETG",
+    "is_custom_defined": "0",
+    "name": "IEMAI  PETG-CF matte green - calibrated",
+    "nozzle_temperature_initial_layer": [
+        "250"
+    ],
+    "nozzle_temperature_range_high": [
+        "250"
+    ],
+    "overhang_fan_threshold": [
+        "10%"
+    ],
+    "pressure_advance": [
+        "0.03"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "support_material_interface_fan_speed": [
+        "75"
+    ],
+    "version": "2.1.0.0"
+}

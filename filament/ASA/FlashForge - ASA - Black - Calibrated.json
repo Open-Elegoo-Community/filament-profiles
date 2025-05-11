@@ -1,0 +1,82 @@
+{
+    "activate_air_filtration": [
+        "0"
+    ],
+    "default_filament_colour": [
+        "#0A0204"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "fan_cooling_layer_time": [
+        "25"
+    ],
+    "fan_max_speed": [
+        "20"
+    ],
+    "filament_deretraction_speed": [
+        "45"
+    ],
+    "filament_flow_ratio": [
+        "0.83"
+    ],
+    "filament_retract_lift_above": [
+        "1"
+    ],
+    "filament_retract_when_changing_layer": [
+        "0"
+    ],
+    "filament_retraction_length": [
+        "1"
+    ],
+    "filament_retraction_speed": [
+        "100"
+    ],
+    "filament_settings_id": [
+        "FlashForge - ASA - Black - Calibrated"
+    ],
+    "filament_vendor": [
+        "FlashForge"
+    ],
+    "filament_wipe": [
+        "0"
+    ],
+    "filament_z_hop_types": [
+        "Slope Lift"
+    ],
+    "from": "User",
+    "full_fan_speed_layer": [
+        "4"
+    ],
+    "hot_plate_temp": [
+        "100"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "100"
+    ],
+    "inherits": "Elegoo Generic ASA",
+    "is_custom_defined": "0",
+    "name": "FlashForge - ASA - Black - Calibrated",
+    "nozzle_temperature": [
+        "285"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "285"
+    ],
+    "nozzle_temperature_range_high": [
+        "300"
+    ],
+    "overhang_fan_speed": [
+        "60"
+    ],
+    "pressure_advance": [
+        "0.045"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "slow_down_layer_time": [
+        "2"
+    ],
+    "version": "2.2.0.4"
+}

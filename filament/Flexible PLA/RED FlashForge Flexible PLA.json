@@ -1,0 +1,64 @@
+{
+    "close_fan_the_first_x_layers": [
+        "0"
+    ],
+    "default_filament_colour": [
+        "#E40C0D"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "fan_max_speed": [
+        "60"
+    ],
+    "fan_min_speed": [
+        "60"
+    ],
+    "filament_flow_ratio": [
+        "1.45"
+    ],
+    "filament_max_volumetric_speed": [
+        "30"
+    ],
+    "filament_notes": [
+        "real purple, not the matte finish"
+    ],
+    "filament_settings_id": [
+        "RED FlashForge Flexible PLA"
+    ],
+    "filament_type": [
+        "PLA"
+    ],
+    "from": "User",
+    "full_fan_speed_layer": [
+        "1"
+    ],
+    "hot_plate_temp": [
+        "35"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "35"
+    ],
+    "inherits": "Elegoo Generic PETG",
+    "is_custom_defined": "0",
+    "name": "RED FlashForge Flexible PLA",
+    "nozzle_temperature": [
+        "223"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "223"
+    ],
+    "nozzle_temperature_range_high": [
+        "250"
+    ],
+    "pressure_advance": [
+        "0.03"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "support_material_interface_fan_speed": [
+        "80"
+    ],
+    "version": "2.1.0.0"
+}

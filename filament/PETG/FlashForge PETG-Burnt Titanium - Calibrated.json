@@ -1,0 +1,67 @@
+{
+    "default_filament_colour": [
+        "#12354B"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "fan_max_speed": [
+        "25"
+    ],
+    "filament_flow_ratio": [
+        "0.9489"
+    ],
+    "filament_max_volumetric_speed": [
+        "25"
+    ],
+    "filament_notes": [
+        "real purple, not the matte finish"
+    ],
+    "filament_retract_when_changing_layer": [
+        "0"
+    ],
+    "filament_settings_id": [
+        "FlashForge PETG-Burnt Titanium - Calibrated"
+    ],
+    "filament_type": [
+        "PETG-CF"
+    ],
+    "filament_vendor": [
+        "FlashForge"
+    ],
+    "filament_wipe": [
+        "0"
+    ],
+    "filament_z_hop": [
+        "0.2"
+    ],
+    "filament_z_hop_types": [
+        "Slope Lift"
+    ],
+    "from": "User",
+    "inherits": "Elegoo Generic PETG",
+    "is_custom_defined": "0",
+    "name": "FlashForge PETG-Burnt Titanium - Calibrated",
+    "nozzle_temperature": [
+        "245"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "250"
+    ],
+    "nozzle_temperature_range_high": [
+        "250"
+    ],
+    "overhang_fan_speed": [
+        "65"
+    ],
+    "pressure_advance": [
+        "0.03"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "support_material_interface_fan_speed": [
+        "70"
+    ],
+    "version": "2.1.0.0"
+}

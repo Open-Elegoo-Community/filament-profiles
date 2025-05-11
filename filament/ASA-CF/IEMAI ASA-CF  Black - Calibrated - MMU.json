@@ -1,0 +1,118 @@
+{
+    "close_fan_the_first_x_layers": [
+        "0"
+    ],
+    "default_filament_colour": [
+        "#000002"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "fan_cooling_layer_time": [
+        "25"
+    ],
+    "fan_max_speed": [
+        "5"
+    ],
+    "fan_min_speed": [
+        "8"
+    ],
+    "filament_cooling_final_speed": [
+        "0"
+    ],
+    "filament_cooling_initial_speed": [
+        "0"
+    ],
+    "filament_cooling_moves": [
+        "0"
+    ],
+    "filament_cost": [
+        "26"
+    ],
+    "filament_flow_ratio": [
+        "0.8046"
+    ],
+    "filament_loading_speed": [
+        "0"
+    ],
+    "filament_loading_speed_start": [
+        "0"
+    ],
+    "filament_max_volumetric_speed": [
+        "25"
+    ],
+    "filament_minimal_purge_on_wipe_tower": [
+        "0"
+    ],
+    "filament_notes": [
+        "offset was -.17 for the calbration settings.   May be where it needs to be for printing"
+    ],
+    "filament_retract_when_changing_layer": [
+        "0"
+    ],
+    "filament_settings_id": [
+        "IEMAI ASA-CF  Black - Calibrated - MMU"
+    ],
+    "filament_start_gcode": [
+        "; filament start gcode\nSET_GCODE_OFFSET Z_ADJUST=-0.035 MOVE=1 "
+    ],
+    "filament_type": [
+        "PETG-CF"
+    ],
+    "filament_unloading_speed": [
+        "0"
+    ],
+    "filament_unloading_speed_start": [
+        "0"
+    ],
+    "filament_vendor": [
+        "Isounghu"
+    ],
+    "filament_wipe": [
+        "0"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "105"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "105"
+    ],
+    "inherits": "Elegoo Generic PETG",
+    "is_custom_defined": "0",
+    "name": "IEMAI ASA-CF  Black - Calibrated - MMU",
+    "nozzle_temperature": [
+        "275"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "275"
+    ],
+    "overhang_fan_speed": [
+        "20"
+    ],
+    "overhang_fan_threshold": [
+        "10%"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "slow_down_layer_time": [
+        "0"
+    ],
+    "slow_down_min_speed": [
+        "25"
+    ],
+    "support_material_interface_fan_speed": [
+        "10"
+    ],
+    "temperature_vitrification": [
+        "220"
+    ],
+    "textured_plate_temp": [
+        "105"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "105"
+    ],
+    "version": "2.1.0.0"
+}

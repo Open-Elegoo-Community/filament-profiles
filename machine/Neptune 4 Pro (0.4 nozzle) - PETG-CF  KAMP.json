@@ -1,0 +1,30 @@
+{
+    "auxiliary_fan": "1",
+    "bed_mesh_probe_distance": "25,25",
+    "from": "User",
+    "inherits": "Elegoo Neptune 4 Pro (0.4 nozzle)",
+    "is_custom_defined": "0",
+    "machine_start_gcode": ";ELEGOO NEPTUNE 4 PRO\n\nM220 S100 ;Set the feed speed to 100%\nM221 S100 ;Set the flow rate to 100%\nM104 S270\nM190 S[bed_temperature_initial_layer_single]\nG90\nG28 ;home\nSET_PRESSURE_ADVANCE SMOOTH_TIME=0.02\n;BED_MESH_CLEAR\n;BED_MESH_PROFILE LOAD=12-80-FULA          ;load the best mesh we have, with 12 probe points\n; calling the KAMP after doing config in printer.cfg - all paramenters are set in KAMP_settings.cfg\nBED_MESH_CALIBRATE \nG1 Z10 F300\nG1 X20 Y40 F6000\nG1 Z0 F300\nM109 S[nozzle_temperature_initial_layer]\nG92 E0 ;Reset Extruder\nG1 X10 Y50 Z0.4 F3000 ;Move to start position\nG1 Y100 E30 F400 ;Draw the first line\nG1 Z0.6 F120.0 ;Move to side a little\nG1 X162.5 F3000\nG92 E0 ;Reset Extruder\n",
+    "manual_filament_change": "1",
+    "name": "Neptune 4 Pro (0.4 nozzle) - PETG-CF  KAMP",
+    "print_host": "192.168.0.23",
+    "printable_area": [
+        "0x0",
+        "225x0",
+        "225x225",
+        "0x225"
+    ],
+    "printer_notes": "245 is too hot for PETG, use 240 max, likely best at 235",
+    "printer_settings_id": "Neptune 4 Pro (0.4 nozzle) - PETG-CF  KAMP",
+    "retraction_speed": [
+        "100"
+    ],
+    "thumbnails": "320x320/PNG, 160x160/PNG, 600x600/PNG",
+    "version": "2.1.0.0",
+    "z_hop": [
+        "0.6"
+    ],
+    "z_hop_types": [
+        "Normal Lift"
+    ]
+}

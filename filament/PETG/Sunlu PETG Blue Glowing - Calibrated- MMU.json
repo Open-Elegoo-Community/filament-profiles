@@ -1,0 +1,94 @@
+{
+    "default_filament_colour": [
+        "#32D2E5"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "fan_max_speed": [
+        "30"
+    ],
+    "filament_cooling_final_speed": [
+        "0"
+    ],
+    "filament_cooling_initial_speed": [
+        "0"
+    ],
+    "filament_cooling_moves": [
+        "0"
+    ],
+    "filament_flow_ratio": [
+        "0.9989"
+    ],
+    "filament_loading_speed": [
+        "0"
+    ],
+    "filament_loading_speed_start": [
+        "0"
+    ],
+    "filament_max_volumetric_speed": [
+        "28"
+    ],
+    "filament_minimal_purge_on_wipe_tower": [
+        "0"
+    ],
+    "filament_notes": [
+        "real purple, not the matte finish"
+    ],
+    "filament_retract_when_changing_layer": [
+        "0"
+    ],
+    "filament_settings_id": [
+        "Sunlu PETG Blue Glowing - Calibrated- MMU"
+    ],
+    "filament_start_gcode": [
+        "; filament start gcode\nSET_GCODE_OFFSET Z_ADJUST=0.015 MOVE=1 "
+    ],
+    "filament_unloading_speed": [
+        "0"
+    ],
+    "filament_unloading_speed_start": [
+        "0"
+    ],
+    "filament_vendor": [
+        "Sunlu"
+    ],
+    "filament_wipe": [
+        "0"
+    ],
+    "filament_z_hop": [
+        "0.2"
+    ],
+    "filament_z_hop_types": [
+        "Slope Lift"
+    ],
+    "from": "User",
+    "inherits": "Elegoo Generic PETG",
+    "is_custom_defined": "0",
+    "name": "Sunlu PETG Blue Glowing - Calibrated- MMU",
+    "nozzle_temperature": [
+        "245"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "245"
+    ],
+    "nozzle_temperature_range_high": [
+        "250"
+    ],
+    "overhang_fan_speed": [
+        "80"
+    ],
+    "pressure_advance": [
+        "0.03"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "slow_down_layer_time": [
+        "0"
+    ],
+    "temperature_vitrification": [
+        "190"
+    ],
+    "version": "2.1.0.0"
+}

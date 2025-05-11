@@ -1,0 +1,31 @@
+{
+    "default_filament_colour": [
+        "#3D743B"
+    ],
+    "fan_max_speed": [
+        "40"
+    ],
+    "filament_settings_id": [
+        "Overture Generic PETG - Matte Green"
+    ],
+    "filament_vendor": [
+        "Overture"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "75"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "80"
+    ],
+    "inherits": "Elegoo Generic PETG",
+    "is_custom_defined": "0",
+    "name": "Overture Generic PETG - Matte Green",
+    "nozzle_temperature_range_high": [
+        "255"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "version": "2.1.0.0"
+}

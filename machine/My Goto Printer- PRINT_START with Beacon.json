@@ -1,0 +1,84 @@
+{
+    "bed_mesh_probe_distance": "25,25",
+    "from": "User",
+    "inherits": "Elegoo Neptune 4 Pro (0.4 nozzle)",
+    "is_custom_defined": "0",
+    "machine_end_gcode": "PRINT_END\n;G91 ;Relative positionning\n;G1 E-2 F2700 ;Retract a bit\n;G1 E-8 X5 Y5 Z40 F3000 ;Retract\n;G90 ;Absolute positionning\n;G1 X15 Y122.5 F6000;Finish print and move to the x home side of bed\n;Mobo_fan_IDLE         ;   set the motherboard fan back to 50% \n;M118 Set the motherboard fan back to 50% for idling\n;M106 S0 ;Turn-off fan;\n;M104 S0 ;Turn-off hotend\n;M140 S0 ;Turn-off bed\n;M84 X Y E ;Disable all steppers but Z",
+    "machine_max_acceleration_e": [
+        "2000",
+        "5000"
+    ],
+    "machine_max_acceleration_extruding": [
+        "0",
+        "10000"
+    ],
+    "machine_max_acceleration_x": [
+        "11100",
+        "10000"
+    ],
+    "machine_max_acceleration_y": [
+        "11100",
+        "10000"
+    ],
+    "machine_max_acceleration_z": [
+        "1600",
+        "500"
+    ],
+    "machine_max_jerk_e": [
+        "9",
+        "5"
+    ],
+    "machine_max_jerk_x": [
+        "15",
+        "9"
+    ],
+    "machine_max_jerk_y": [
+        "15",
+        "9"
+    ],
+    "machine_max_jerk_z": [
+        "15",
+        "0.4"
+    ],
+    "machine_max_speed_x": [
+        "350",
+        "500"
+    ],
+    "machine_max_speed_y": [
+        "350",
+        "500"
+    ],
+    "machine_max_speed_z": [
+        "40",
+        "12"
+    ],
+    "machine_start_gcode": ";ELEGOO NEPTUNE 4 PRO\n\nM220 S50 ;Set the feed speed to 100%\nM221 S100 ;Set the flow rate to 100%\nM104 S200      ;  Set the extruder to an initial temperature of 200 just to get the hot end heated\nG90\nG28 ;home\nCustom_Print_Start BED_TEMP=[bed_temperature_initial_layer_single] EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_MESH=adaptive   TIMER=30 X_START=5 Y_START=5 X_END=150 Y_END=5          ; calling a custom print_start macro documentation in user_settings.cfg",
+    "manual_filament_change": "1",
+    "name": "My Goto Printer- PRINT_START with Beacon",
+    "print_host": "192.168.0.136",
+    "printable_area": [
+        "0x0",
+        "225x0",
+        "225x225",
+        "0x225"
+    ],
+    "printer_notes": "245 is too hot for PETG, use 240 max, likely best at 235\n\nChanged out the standard 60x60mm motherboard fan for a quiet nactua 40mm fan, for printing, we will run the 40mm at 100%, and idle it at 50%.   if < 50%, there is not enough power to keep the fan turning",
+    "printer_settings_id": "My Goto Printer- PRINT_START with Beacon",
+    "retract_before_wipe": [
+        "100%"
+    ],
+    "retract_when_changing_layer": [
+        "0"
+    ],
+    "retraction_length": [
+        "0.5"
+    ],
+    "retraction_speed": [
+        "100"
+    ],
+    "thumbnails": "320x320/PNG, 160x160/PNG, 600x600/PNG",
+    "version": "2.1.0.0",
+    "wipe_distance": [
+        "0.6"
+    ]
+}

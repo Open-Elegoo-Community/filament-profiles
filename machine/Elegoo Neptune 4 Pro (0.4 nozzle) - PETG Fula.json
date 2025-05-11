@@ -1,0 +1,44 @@
+{
+    "bed_mesh_probe_distance": "25,25",
+    "from": "User",
+    "inherits": "Elegoo Neptune 4 Pro (0.4 nozzle)",
+    "is_custom_defined": "0",
+    "machine_end_gcode": ";PRINT END\nG91 ;Relative positionning\nG1 E-2 F2700 ;Retract a bit\nG1 E-15 X5 Y5 Z3 F3000 ;Retract\nG90 ;Absolute positionning\nG1 X10 Y220 F12000;Finish print\nM106 S0 ;Turn-off fan\nM104 S0 ;Turn-off hotend\nM140 S0 ;Turn-off bed\nM84 X Y E ;Disable all steppers but Z",
+    "machine_max_acceleration_extruding": [
+        "20000",
+        "10000"
+    ],
+    "machine_max_acceleration_retracting": [
+        "20000",
+        "10000"
+    ],
+    "machine_max_acceleration_x": [
+        "16000",
+        "10000"
+    ],
+    "machine_max_acceleration_y": [
+        "16000",
+        "10000"
+    ],
+    "machine_max_jerk_x": [
+        "15",
+        "9"
+    ],
+    "machine_max_jerk_y": [
+        "15",
+        "9"
+    ],
+    "machine_start_gcode": ";ELEGOO NEPTUNE 4 PRO\n\nM220 S50 ;Set the feed speed to 100%\nM221 S100 ;Set the flow rate to 100%\nM104 S250\nM190 S[bed_temperature_initial_layer_single]\nG90\nG28 ;home\nSET_PRESSURE_ADVANCE SMOOTH_TIME=0.02\nBED_MESH_CALIBRATE \nG1 Z5 F5000\nG1 X20 Y40 F12000\nG1 Z2 F300         ;keeping the nozzle off the bed\nM109 S[nozzle_temperature_initial_layer]\nG92 E0 ;Reset Extruder\nG1 X15 Y100 Z0.4 F12000 ;Move to start position\nM109 S[nozzle_temperature_initial_layer]\nG92 E0 ;Reset Extruder\nSET_PIN PIN=Part_Light VALUE=1\nG1 X15 Y100 Z0.4 F12000 ;Move to start position\nG1 Y150  E30 F1000 ;Draw the first line\nM106 S250      ;    Turn the part fan to 70% to break the strand from the nozzle\nG1 Z5 F120.0 ;Move to side a little\nG4 P2000                  ;wait for 2 seconds for the filament to harden.   CDW 8/10/2024\nG91                                                                           ; relative positioning \nG1 X20 F15000                                                                 ; wiggle movement to ensure free movement of purge\nG1 X-20\nG1 X20\nG1 X-20\nG1 X20\nG1 X-20\nG90                 ;reset to absolute positioning mode\nM106 S0         ;  turn the part fan back offf\nG1 X122.5 Y 122.5 F12000     ; Move to center of bed\nG92 E0 ;Reset Extruder\nFrame_light_on\nPart_light_on\nM220 S100        ;set the speed to 100% OpenNeptune sets to 50 by default\n",
+    "name": "Elegoo Neptune 4 Pro (0.4 nozzle) - PETG Fula",
+    "print_host": "192.168.0.59",
+    "printer_notes": "245 is too hot for PETG, use 240 max, likely best at 235",
+    "printer_settings_id": "Elegoo Neptune 4 Pro (0.4 nozzle) - PETG Fula",
+    "retraction_speed": [
+        "100"
+    ],
+    "thumbnails": "320x320/PNG, 160x160/PNG, 600x600/PNG, 32x32/PNG",
+    "version": "2.1.0.0",
+    "z_hop": [
+        "0.6"
+    ]
+}

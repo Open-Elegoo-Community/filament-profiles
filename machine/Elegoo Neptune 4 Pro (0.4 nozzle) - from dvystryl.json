@@ -1,0 +1,93 @@
+{
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\nG92 E0\n;[layer_z]\nTIMELAPSE_TAKE_FRAME\n\n",
+    "change_filament_gcode": "_SP_SET_PURGE PURGE=[first_flush_volume]",
+    "cooling_tube_length": "0",
+    "cooling_tube_retraction": "0",
+    "deretraction_speed": [
+        "40"
+    ],
+    "enable_filament_ramming": "0",
+    "extra_loading_move": "0",
+    "fan_kickstart": "0.2",
+    "fan_speedup_time": "0.5",
+    "from": "User",
+    "inherits": "Elegoo Neptune 4 Pro (0.4 nozzle)",
+    "is_custom_defined": "0",
+    "machine_end_gcode": "PRINT_END\n_SP_PRINT_END\n",
+    "machine_max_acceleration_e": [
+        "2000",
+        "5000"
+    ],
+    "machine_max_acceleration_extruding": [
+        "0",
+        "10000"
+    ],
+    "machine_max_acceleration_retracting": [
+        "2000",
+        "10000"
+    ],
+    "machine_max_acceleration_x": [
+        "11000",
+        "10000"
+    ],
+    "machine_max_acceleration_y": [
+        "11000",
+        "10000"
+    ],
+    "machine_max_acceleration_z": [
+        "100",
+        "500"
+    ],
+    "machine_max_jerk_e": [
+        "7.5",
+        "5"
+    ],
+    "machine_max_jerk_x": [
+        "25",
+        "9"
+    ],
+    "machine_max_jerk_y": [
+        "25",
+        "9"
+    ],
+    "machine_max_jerk_z": [
+        "25",
+        "0.4"
+    ],
+    "machine_max_speed_e": [
+        "500",
+        "60"
+    ],
+    "machine_max_speed_z": [
+        "40",
+        "12"
+    ],
+    "machine_start_gcode": "PARK_HEAD\n\nRESPOND PREFIX=orca MSG=\"Setting feed and flow rate to 100%\"\nM220 S100 ;Set the feed speed to 100%\nM221 S100 ;Set the flow rate to 100%\n\nRESPOND PREFIX=orca MSG=\"... Setting nozzle tempature\"\nM104 S[nozzle_temperature_initial_layer]\nRESPOND PREFIX=orca MSG=\"... Setting bed tempature\"\nM190 S[bed_temperature_initial_layer_single]\n\n_SP_PRINT_START LANE=[initial_tool] TEMP=[nozzle_temperature_initial_layer]\nCLEAN_NOZZLE TEMP=[nozzle_temperature_initial_layer]\n\nPRINT_START\n\nRESPOND PREFIX=orca MSG=\"Homing\"\nG90\nG28 \n\nRESPOND PREFIX=orca MSG=\"Creating bed mesh\"\nBED_MESH_CLEAR                                     \nBED_MESH_CALIBRATE ADAPTIVE=1 METHOD=rapid_scan algorithm=bicubic   \n\nRESPOND PREFIX=orca MSG=\"Move to start position\"\nG1 X50.5 Y1 Z0.4 F6000 \nG1 X55.5 F600\nM109 S[nozzle_temperature_initial_layer]\nG1 E10 F600 ;prime Nozzle\nG92 E0 ;Reset Extruder\n\nRESPOND PREFIX=orca MSG=\"Draw the first line\"\nG1 X167.5 E40 F400 ;Draw the first line\nG1 Z0.6 F120.0 ;Move to side a little\nG1 X162.5 F3000\nG92 E0 ;Reset Extruder",
+    "machine_tool_change_time": "20",
+    "name": "Elegoo Neptune 4 Pro (0.4 nozzle) - from dvystryl",
+    "parking_pos_retraction": "0",
+    "print_host": "threedprinter.local",
+    "printable_area": [
+        "0x0",
+        "235x0",
+        "235x235",
+        "0x235"
+    ],
+    "printer_settings_id": "Elegoo Neptune 4 Pro (0.4 nozzle) - from dvystryl",
+    "retract_before_wipe": [
+        "70%"
+    ],
+    "retract_length_toolchange": [
+        "0"
+    ],
+    "retraction_speed": [
+        "40"
+    ],
+    "version": "2.2.0.4",
+    "wipe_distance": [
+        "0.5"
+    ],
+    "z_hop": [
+        "0"
+    ]
+}

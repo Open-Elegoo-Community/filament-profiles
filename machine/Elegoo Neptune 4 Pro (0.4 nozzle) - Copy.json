@@ -1,0 +1,9 @@
+{
+    "from": "User",
+    "inherits": "Elegoo Neptune 4 Pro (0.4 nozzle)",
+    "is_custom_defined": "0",
+    "name": "Elegoo Neptune 4 Pro (0.4 nozzle) - Copy",
+    "print_host": "192.168.0.23",
+    "printer_settings_id": "Elegoo Neptune 4 Pro (0.4 nozzle) - Copy",
+    "version": "2.1.1.0"
+}

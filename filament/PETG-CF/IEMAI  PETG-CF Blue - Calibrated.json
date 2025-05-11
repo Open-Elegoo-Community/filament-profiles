@@ -1,0 +1,73 @@
+{
+    "default_filament_colour": [
+        "#2F3E5F"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "fan_cooling_layer_time": [
+        "20"
+    ],
+    "fan_max_speed": [
+        "25"
+    ],
+    "fan_min_speed": [
+        "30"
+    ],
+    "filament_cost": [
+        "26"
+    ],
+    "filament_flow_ratio": [
+        "0.9599"
+    ],
+    "filament_max_volumetric_speed": [
+        "30"
+    ],
+    "filament_notes": [
+        "offset was -.17 for the calbration settings.   May be where it needs to be for printing"
+    ],
+    "filament_retract_when_changing_layer": [
+        "1"
+    ],
+    "filament_settings_id": [
+        "IEMAI  PETG-CF Blue - Calibrated"
+    ],
+    "filament_type": [
+        "PETG-CF"
+    ],
+    "filament_vendor": [
+        "Isounghu"
+    ],
+    "filament_wipe": [
+        "1"
+    ],
+    "from": "User",
+    "inherits": "Elegoo Generic PETG",
+    "is_custom_defined": "0",
+    "name": "IEMAI  PETG-CF Blue - Calibrated",
+    "nozzle_temperature_initial_layer": [
+        "250"
+    ],
+    "overhang_fan_speed": [
+        "30"
+    ],
+    "overhang_fan_threshold": [
+        "10%"
+    ],
+    "pressure_advance": [
+        "0.031"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "slow_down_min_speed": [
+        "25"
+    ],
+    "support_material_interface_fan_speed": [
+        "65"
+    ],
+    "temperature_vitrification": [
+        "220"
+    ],
+    "version": "2.1.0.0"
+}

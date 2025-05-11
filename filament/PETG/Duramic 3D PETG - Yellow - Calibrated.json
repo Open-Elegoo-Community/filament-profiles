@@ -1,0 +1,67 @@
+{
+    "close_fan_the_first_x_layers": [
+        "1"
+    ],
+    "default_filament_colour": [
+        "#F5DC0D"
+    ],
+    "dont_slow_down_outer_wall": [
+        "1"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "fan_max_speed": [
+        "30"
+    ],
+    "filament_cost": [
+        "26"
+    ],
+    "filament_flow_ratio": [
+        "0.9989"
+    ],
+    "filament_max_volumetric_speed": [
+        "15"
+    ],
+    "filament_notes": [
+        "offset was -.17 for the calbration settings.   May be where it needs to be for printing"
+    ],
+    "filament_retract_when_changing_layer": [
+        "0"
+    ],
+    "filament_settings_id": [
+        "Duramic 3D PETG - Yellow - Calibrated"
+    ],
+    "filament_vendor": [
+        "Duramic 3D"
+    ],
+    "filament_wipe": [
+        "0"
+    ],
+    "from": "User",
+    "inherits": "Elegoo Generic PETG",
+    "is_custom_defined": "0",
+    "name": "Duramic 3D PETG - Yellow - Calibrated",
+    "nozzle_temperature": [
+        "245"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "245"
+    ],
+    "pressure_advance": [
+        "0.034"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "slow_down_min_speed": [
+        "25"
+    ],
+    "support_material_interface_fan_speed": [
+        "30"
+    ],
+    "temperature_vitrification": [
+        "220"
+    ],
+    "version": "2.1.0.0"
+}

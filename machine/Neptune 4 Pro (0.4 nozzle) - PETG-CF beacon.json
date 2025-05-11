@@ -1,0 +1,66 @@
+{
+    "bed_mesh_probe_distance": "25,25",
+    "from": "User",
+    "inherits": "Elegoo Neptune 4 Pro (0.4 nozzle)",
+    "is_custom_defined": "0",
+    "machine_end_gcode": ";PRINT END\nG91 ;Relative positionning\nG1 E-2 F2700 ;Retract a bit\nG1 E-8 X5 Y5 Z20 F3000 ;Retract\nG90 ;Absolute positionning\nG1 X15 Y122.5 F6000;Finish print and move to the x home side of bed\nMobo_fan_IDLE         ;   set the motherboard fan back to 50% \nM118 Set the motherboard fan back to 50% for idling\nM106 S0 ;Turn-off fan\nM104 S0 ;Turn-off hotend\nM140 S0 ;Turn-off bed\nM84 X Y E ;Disable all steppers but Z",
+    "machine_max_acceleration_e": [
+        "6000",
+        "5000"
+    ],
+    "machine_max_acceleration_extruding": [
+        "12000",
+        "10000"
+    ],
+    "machine_max_acceleration_x": [
+        "20000",
+        "10000"
+    ],
+    "machine_max_acceleration_y": [
+        "20000",
+        "10000"
+    ],
+    "machine_max_jerk_x": [
+        "15",
+        "9"
+    ],
+    "machine_max_jerk_y": [
+        "15",
+        "9"
+    ],
+    "machine_start_gcode": ";ELEGOO NEPTUNE 4 PRO\n\nM220 S50 ;Set the feed speed to 100%\nM221 S100 ;Set the flow rate to 100%\nM104 S250\nM190 S[bed_temperature_initial_layer_single]\nG90\nG28 ;home\nSET_PRESSURE_ADVANCE SMOOTH_TIME=0.02\nBED_MESH_CALIBRATE \nG1 Z5 F3000\nG1 X20 Y40 F6000\nG1 Z2 F300         ;keeping the nozzle off the bed\nM109 S[nozzle_temperature_initial_layer]\nG92 E0 ;Reset Extruder\nM109 S[nozzle_temperature_initial_layer]\nSET_PIN PIN=Part_Light VALUE=1\nG1 X15 Y100 Z0.4 F3000 ;Move to start position\nG1 Y150  E30 F1000 ;Draw the first line\nM106 S250      ;    Turn the part fan to 70% to break the strand from the nozzle\nG1 Z5 F120.0 ;Move to side a little\nG4 P2000                  ;wait for 2 seconds for the filament to harden.   CDW 8/10/2024\nG91                                                                           ; relative positioning \nWIGGLE          ;    run the quick wiggle macro to break the Purged extrusion\nG90                 ;reset to absolute positioning mode\nM106 S0         ;  turn the part fan back offf\nG1 X122.5 Y 122.5 F5000     ; Move to center of bed\nG92 E0 ;Reset Extruder\nFrame_light_on\nPart_light_on\nM118 Set the motherboard fan to 100%\nMobo_fan_PRINT          ; setting the motherboard speed to 100% for the print (40mm fan, not 60mm)\nM220 S100        ;set the speed to 100% OpenNeptune sets to 50 by default\nSET_FILAMENT_SENSOR SENSOR=filament_sensor ENABLE=1      ; pulled this out of printStart\n",
+    "manual_filament_change": "1",
+    "name": "Neptune 4 Pro (0.4 nozzle) - PETG-CF beacon",
+    "print_host": "192.168.0.59",
+    "printable_area": [
+        "0x0",
+        "225x0",
+        "225x225",
+        "0x225"
+    ],
+    "printer_notes": "245 is too hot for PETG, use 240 max, likely best at 235\n\nChanged out the standard 60x60mm motherboard fan for a quiet nactua 40mm fan, for printing, we will run the 40mm at 100%, and idle it at 50%.   if < 50%, there is not enough power to keep the fan turning",
+    "printer_settings_id": "Neptune 4 Pro (0.4 nozzle) - PETG-CF beacon",
+    "retract_before_wipe": [
+        "100%"
+    ],
+    "retract_when_changing_layer": [
+        "0"
+    ],
+    "retraction_length": [
+        "1"
+    ],
+    "retraction_speed": [
+        "100"
+    ],
+    "thumbnails": "320x320/PNG, 160x160/PNG, 600x600/PNG",
+    "version": "2.1.0.0",
+    "wipe": [
+        "0"
+    ],
+    "z_hop": [
+        "0.6"
+    ],
+    "z_hop_types": [
+        "Normal Lift"
+    ]
+}
